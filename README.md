@@ -5,13 +5,13 @@ A clean, responsive, and modern personal portfolio website designed to showcase 
 
 ---
 
-## 🧠 About The Project
+##  About The Project
 
 This project is a single-page application built from scratch to serve as a central hub for my professional presence. It features a dynamic typing effect, a clean user interface, and sections detailing my experience, education, technical skills, and key projects. The goal was to create a fast, visually appealing, and easy-to-navigate site that effectively communicates my capabilities.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **Responsive Design**: Looks great on desktops, tablets, and mobile devices.  
 - **Interactive UI**: Features a dynamic typing animation and smooth-scrolling navigation.  
@@ -20,7 +20,7 @@ This project is a single-page application built from scratch to serve as a centr
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: React  
 - **Build Tool**: Vite  
@@ -30,11 +30,11 @@ This project is a single-page application built from scratch to serve as a centr
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 To get a local copy up and running, follow these simple steps:
 
-### ✅ Prerequisites
+###  Prerequisites
 
 Make sure you have **Node.js** and **npm** installed.
 
@@ -48,8 +48,7 @@ You can download them from: https://nodejs.org/
 
    ```bash
    git clone https://github.com/shreyas27092004/my-portfolio.git
-````
-
+``
 2. Navigate into the project directory:
 
    ```bash
@@ -72,7 +71,7 @@ You can download them from: https://nodejs.org/
 
 ---
 
-## 📦 Building for Production
+##  Building for Production
 
 To create an optimized static build of the site:
 
@@ -84,7 +83,7 @@ This will generate a `dist` folder containing all the production-ready files.
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 This is a static site that can be easily deployed on any static hosting service. Recommended options:
 
@@ -99,7 +98,7 @@ This is a static site that can be easily deployed on any static hosting service.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 **Shreyas V**
 [LinkedIn](https://www.linkedin.com/in/shreyas-v/)
