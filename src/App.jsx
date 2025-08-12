@@ -34,19 +34,19 @@ const App = () => {
         name: "Titanic Survival Prediction",
         techStack: ["Python", "Pandas", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/titanic-survival-prediction",
-        imageUrl: "/images/project-titanic.png",
+        imageUrl: "/images/titanic-survival.png",
       },
       {
         name: "Linear Regression App",
         techStack: ["Python", "Streamlit", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/linear_regression_app",
-        imageUrl: "/images/project-regression.png",
+        imageUrl: "/images/linear-regression.png",
       },
       {
         name: "Crime Rate Prediction",
         techStack: ["Python", "Pandas", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/crime-rate-prediction",
-        imageUrl: "/images/project-crime.jpg",
+        imageUrl: "/images/crime-prediction.png",
       },
     ]
   };
