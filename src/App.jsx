@@ -1,6 +1,5 @@
- 
 import React, { useState, useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+// import Typed from 'typed.js'; // This line was causing the error and has been removed.
 import { Github, Linkedin, Mail, Download, Briefcase, CheckCircle, GraduationCap } from 'lucide-react';
 
 const App = () => {
@@ -15,7 +14,7 @@ const App = () => {
       email: "shreyashreyu405@gmail.com",
       linkedin: "https://www.linkedin.com/in/shreyas-v2709",
       github: "https://github.com/shreyas27092004",
-      resume: "/Resume.pdf",
+      resume: "/Resume.pdf", 
     },
     skills: {
       data_analysis: [
@@ -35,35 +34,56 @@ const App = () => {
         name: "Titanic Survival Prediction",
         techStack: ["Python", "Pandas", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/titanic-survival-prediction",
-        imageUrl: "/images/titanic-survival.png",
+        imageUrl: "/images/project-titanic.png",
       },
       {
         name: "Linear Regression App",
         techStack: ["Python", "Streamlit", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/linear_regression_app",
-        imageUrl: "/images/linear-regression.png",
+        imageUrl: "/images/project-regression.png",
       },
       {
         name: "Crime Rate Prediction",
         techStack: ["Python", "Pandas", "scikit-learn"],
         githubUrl: "https://github.com/shreyas27092004/crime-rate-prediction",
-        imageUrl: "/images/crime-prediction.png",
+        imageUrl: "/images/project-crime.jpg",
       },
     ]
   };
 
+  // --- CHANGE MADE HERE ---
+  // This effect now dynamically loads Typed.js from a CDN to avoid the build error.
   useEffect(() => {
-    const options = {
-      strings: portfolioData.typedStrings,
-      typeSpeed: 50,
-      backSpeed: 30,
-      backDelay: 1500,
-      loop: true,
-      cursorChar: '|',
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/typed.js@2.0.12';
+    script.async = true;
+    
+    let typedInstance;
+
+    script.onload = () => {
+      if (window.Typed && typedRef.current) {
+        const options = {
+          strings: portfolioData.typedStrings,
+          typeSpeed: 50,
+          backSpeed: 30,
+          backDelay: 1500,
+          loop: true,
+          cursorChar: '|',
+        };
+        typedInstance = new window.Typed(typedRef.current, options);
+      }
     };
-    const typed = new Typed(typedRef.current, options);
+
+    document.body.appendChild(script);
+
     return () => {
-      typed.destroy();
+      // Cleanup function to destroy the Typed instance and remove the script
+      if (typedInstance) {
+        typedInstance.destroy();
+      }
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, [portfolioData.typedStrings]);
 
