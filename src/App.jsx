@@ -15,7 +15,7 @@ const App = () => {
       email: "shreyashreyu405@gmail.com",
       linkedin: "https://www.linkedin.com/in/shreyas-v2709",
       github: "https://github.com/shreyas27092004",
-      resume: "#", // Replace "#" with a link to your resume PDF
+      resume: "/cv/Resume.pdf",
     },
     skills: {
       data_analysis: [
