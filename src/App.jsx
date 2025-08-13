@@ -14,7 +14,7 @@ const App = () => {
       email: "shreyashreyu405@gmail.com",
       linkedin: "https://www.linkedin.com/in/shreyas-v2709",
       github: "https://github.com/shreyas27092004",
-      resume: "/Resume.pdf", 
+      resume: "/myresume.pdf", 
     },
     skills: {
       data_analysis: [
@@ -140,7 +140,7 @@ const App = () => {
       <main className="max-w-4xl mx-auto px-6 py-16">
         <section id="profile" className="flex flex-col md:flex-row items-center text-center md:text-left gap-12 mb-24">
           <div className="flex-shrink-0 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-gray-100 border-2 border-gray-300 shadow-lg">
-            <img src="/images/profile.png" alt="Shreyas V profile picture" className="object-cover w-full h-full" />
+            <img src="/images/profile.jpg" alt="Shreyas V profile picture" className="object-cover w-full h-full" />
           </div>
           <div>
             <p className="text-gray-600 text-lg mb-1">Hello, I'm</p>
@@ -148,7 +148,7 @@ const App = () => {
             <p ref={typedRef} className="text-xl md:text-2xl text-indigo-600 font-light mb-6 h-8"></p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href={portfolioData.contactInfo.resume} download className="flex items-center justify-center px-6 py-3 bg-white border border-gray-300 text-gray-800 font-medium rounded-full shadow-md hover:bg-gray-100">
-                <Download className="w-5 h-5 mr-2" /> Download CV
+                <Download className="w-5 h-5 mr-2" /> Download Resume
               </a>
               <a href="#contact" className="flex items-center justify-center px-6 py-3 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-700">
                 Contact Info
